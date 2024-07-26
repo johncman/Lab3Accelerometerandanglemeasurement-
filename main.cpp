@@ -1,5 +1,10 @@
 #include "mbed.h"
 #include "LSM6DSLSensor.h"
+/* The code initialises and uses Mbed OS with an LSM6DSLSensor accelerometer and gyroscope. 
+It reads sensor data, turns on the accelerometer and gyroscope, and establishes 12C connection. 
+The accelerometer values are used by the computeAngle function to determine the angle. 
+Every 2 seconds, the main loop reads the sensor data, computes the angle and prints the results.
+*/
 
 #define PI 3.141592654
 
